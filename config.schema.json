@@ -1,0 +1,105 @@
+{
+	"pluginAlias": "HomebridgeYAP",
+	"pluginType": "platform",
+	"singular": true,
+	"headerDisplay": "This HomeBridge plugin will accessory device power state based on period of ping reponses",
+	"footerDisplay": "For more information, see the [README](https://github.com/dwaan/homebridge-yet-another-ping/blob/master/README.md)",
+	"schema": {
+		"type": "object",
+		"properties": {
+			"accessories": {
+				"title": "Accessories",
+				"type": "array",
+				"required": true,
+				"items": {
+					"type": "object",
+					"properties": {
+						"name": {
+							"type": "string",
+							"title": "Name",
+							"placeholder": "Eg: Device name",
+							"minLength": 1
+						},
+						"ip": {
+							"type": "string",
+							"title": "Ip Address",
+							"placeholder": "Eg: 1.1.1.1",
+							"minLength": 7,
+							"required": true
+						},
+						"type": {
+							"type": "string",
+							"title": "Type",
+							"placeholder": "Choose your device type",
+							"default": "Occupancy",
+							"oneOf": [
+								{ "title": "Occupancy", "enum": ["Occupancy"] },
+								{ "title": "Smoke", "enum": ["Smoke"] },
+								{ "title": "Contact", "enum": ["Contact"] },
+								{ "title": "Lock", "enum": ["Lock"] }
+							]
+						},
+						"alive": {
+							"type": "string",
+							"title": "Alive (s)",
+							"placeholder": "Eg: 20"
+						},
+						"every": {
+							"type": "string",
+							"title": "Every (s)",
+							"placeholder": "Eg: 4"
+						}
+					}
+				}
+			}
+		}
+	},
+	"layout": [
+		{
+			"key": "accessories",
+			"type": "array",
+			"items": [
+				{
+					"type": "flex",
+					"displayFlex": true,
+					"items": [
+						{
+							"type": "flex",
+							"displayFlex": true,
+							"flex-direction": "row",
+							"items": [
+								{
+									"key": "accessories[].name",
+									"flex": "3 1 100px"
+								},
+								{
+									"key": "accessories[].ip",
+									"flex": "1 1 100px"
+								}
+							]
+						},
+						{
+							"type": "flex",
+							"displayFlex": true,
+							"flex-direction": "row",
+							"items": [
+								{
+									"key": "accessories[].alive",
+									"flex": "1 1 100px"
+								},
+								{
+									"key": "accessories[].every",
+									"flex": "1 1 100px"
+								},
+								{
+									"key": "accessories[].type",
+									"flex": "1 1 100px"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
