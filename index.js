@@ -45,7 +45,7 @@ class YAPPlugin {
          */
 
         // generate a UUID
-        const uuid = this.api.hap.uuid.generate('homebridge:yap-plugin' + this.ip);
+        const uuid = this.api.hap.uuid.generate('homebridge:yap-plugin' + this.name + this.ip);
 
         // create the external accessory
         this.accessory = new this.api.platformAccessory(this.name, uuid);
