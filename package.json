@@ -1,14 +1,14 @@
 {
   "name": "homebridge-yet-another-ping",
   "description": "Yet Another Ping is a HomeBridge plugin to detect device power state based on period of ping reponses",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "index.js",
   "devDependencies": {
     "homebridge": "^1.3.5",
     "nodemon": "^2.0.15"
   },
   "dependencies": {
-    "nodejs-ping-wrapper": "^1.0.5"
+    "nodejs-ping-wrapper": "^1.1.0"
   },
   "engines": {
     "node": ">=10.17.0",
