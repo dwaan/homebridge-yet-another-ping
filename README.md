@@ -2,6 +2,12 @@
 [![npm-version](https://badgen.net/npm/v/homebridge-yet-another-ping)](https://www.npmjs.com/package/homebridge-yet-another-ping)
 [![npm-total-downloads](https://badgen.net/npm/dt/homebridge-yet-another-ping)](https://www.npmjs.com/package/homebridge-yet-another-ping)
 
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/homebridge/branding/refs/heads/latest/logos/homebridge-color-square.png" width="100">
+<img src="https://raw.githubusercontent.com/dwaan/homebridge-yet-another-ping/refs/heads/main/homebridge-yap.png" width="100">
+</p>
+
 # Yet Another Ping
 Yet Another Ping is a HomeBridge plugin to detect accessory power state based on period of ping responses.
 
