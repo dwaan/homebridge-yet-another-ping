@@ -3,7 +3,7 @@
 [![npm-total-downloads](https://badgen.net/npm/dt/homebridge-yet-another-ping)](https://www.npmjs.com/package/homebridge-yet-another-ping)
 
 # Yet Another Ping
-Yet Another Ping is a HomeBridge plugin to detect accessory power state based on period of ping reponses
+Yet Another Ping is a HomeBridge plugin to detect accessory power state based on period of ping responses.
 
 
 ## Installation
