@@ -105,3 +105,16 @@ dist
 
 # VS Code workspace
 *.code-workspace
+
+
+# Homebridge
+accessories/
+backups/
+persist/
+.uix-*
+config.json
+auth.json
+package-lock.json
+
+# Development
+target/
